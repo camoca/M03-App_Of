@@ -2,11 +2,11 @@
 
 from random import randint
 
-	saldo=100
-	apuesta=0
-	salir=True
-	salir_apuesta= False
-	apuesta= raw_input('Elija una opcion, apuesta o se retira: ')
+saldo=100
+apuesta=0
+salir=True
+salir_apuesta= False
+apuesta= raw_input('Elija una opcion, apuesta o se retira: ')
 
 apuesta()
 jugada()
