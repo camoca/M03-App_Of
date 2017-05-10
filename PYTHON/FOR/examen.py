@@ -1,20 +1,12 @@
-for fil in range(1,5,1):
-	for col in range(1,4,1):
-		if (fil==1):
-			if (col==2):
-				print "A"
-			if (col==3):
-				print "B"
-			if (col==4):
-				print "C"
-				
-			else:
-				print "---"
-		if(col==1):
-			print fil-1
-		
-		if(fil==3 and col==3):
+for fil in range(1,9,1):
+	for col in range(1,9,1):
+		if ((fil %2 ==0) or (col %2==0)):
+			print "*",
+			
+		if ((fil %2 ==1) or (col %2==1)):
 			print "*"
 		
-		if(fil==4 and col==2):
-			print "*"
+		else:	
+			print ""
+			
+	print " "
