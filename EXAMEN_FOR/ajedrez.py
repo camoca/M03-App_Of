@@ -16,3 +16,5 @@ for fil in range(1,9,1):
 				print "B",
 
 	print ""
+	
+
