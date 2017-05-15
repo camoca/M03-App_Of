@@ -1,5 +1,15 @@
+
+####################################
+#  INICAMOS EL BUCLE CON EL FORD   #
+####################################
+
 for fil in range(1,9,1):
 	for col in range(1,9,1):
+		
+
+######################################
+#  PRINTAMOS EL TABLERO DE AJEDREZ   #
+######################################		
 	
 		if (fil== 1 or fil==3 or fil== 5 or fil== 7):
 		
