@@ -1,5 +1,17 @@
+
+
+####################################
+#  INICAMOS EL BUCLE CON EL FORD   #
+####################################
+
 for fil in range(1,7,1):
 	for col in range(1,6,1):
+		
+
+####################################
+#  PRINTAMOS EL ARBOL DE NAVIDAD   #
+####################################		
+		
 		if (fil==1 and col==3):
 			print "*",
 			print " "
