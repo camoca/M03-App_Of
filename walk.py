@@ -2,8 +2,11 @@
 # coding: utf-8
 
 import os
+import stat
 
 path_to_explore="./walk/"
+
+total_size= 0
 
 #MOSTREM NOMES ELS DIRECTORIS
 
@@ -54,7 +57,7 @@ for root, dirs, files  in os.walk(path_to_explore):
 	
 		print os.stat(name_path).st_size
 		
-		total_size= total_size + os.stat(name_path)st_size
+		total_size= total_size + os.stat(name_path).st_size
 		
 #MOSTREM ELS PERMISOS
 		
