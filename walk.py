@@ -1,11 +1,9 @@
 #! /usr/bin/python
 # coding: utf-8
 
-import os
-import stat
+import os, time, stat
 
 path_to_explore="./walk/"
-
 total_size= 0
 
 #MOSTREM NOMES ELS DIRECTORIS
@@ -54,6 +52,7 @@ for root, dirs, files  in os.walk(path_to_explore):
 		print (name_path),
 		
 #MOATREM EL PES
+
 	
 		print os.stat(name_path).st_size
 		
@@ -70,3 +69,26 @@ for root, dirs, files  in os.walk(path_to_explore):
 			print "todo bien todo correcto"
 		else:
 			print "CAUTION"
+
+	
+		print os.stat(name_path).st_size
+		
+		total_size= total_size + os.stat(name_path).st_size
+		
+#MOSTREM ELS PERMISOS
+		
+		permission= stat.S_IMODE (os.stat(name_path).st_mode)
+		permisos= str(oct(permission))
+		print permisos
+		
+		other= permisos[3:4]
+		if(other=="0"):
+			print "todo bien todo correcto"
+		else:
+			print "CAUTION"
+
+
+# OBTENEMOS EL ESTADO DE LA ULTIMA FECHA DE MODIFICACION
+
+	print time.ctime(os.path.getmtime(name_path))
+	print time.ctime(os.path.getctime(name_path))
